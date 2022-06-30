@@ -1,0 +1,47 @@
+import { Button, TextField } from '@mui/material';
+import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+function NewRequest() {
+	// date set to be stored
+	const [reqNo, setReqNo] = useState();
+	const [project, setProject] = useState();
+	const [fund, setFund] = useState();
+	const [forwardTo, setForwardTo] = useState();
+	const [requestDate, setRequestDate] = useState();
+	const [time, setTime] = useState();
+	const [estimateCost, setEstimateCost] = useState();
+	const [type, setType] = useState();
+	const [modeTravel, setModeTravel] = useState();
+	const [purpose, setPurpose] = useState();
+	const [note, setNote] = useState();
+	const [employee, setemployee] = useState();
+	const [designation, setDesignation] = useState();
+	const [date, setDate] = useState();
+	const [division, setDivision] = useState();
+	const [HOD, setHOD] = useState();
+	const [route, setRoute] = useState();
+	const [passengers, setPassengers] = useState();
+
+	const submitDetails = (e) => {
+		e.preventDefault();
+		console.log('check form');
+	};
+
+	return (
+		<div>
+			<form onSubmit={submitDetails}>
+				<div>
+					<label>Request Number</label>
+					<TextField
+						id="outlined-basic"
+						label="Request Number"
+						variant="outlined"
+					/>
+				</div>
+				<Button type="submit">Send</Button>
+			</form>
+		</div>
+	);
+}
+
+export default NewRequest;
