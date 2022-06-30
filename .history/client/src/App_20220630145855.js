@@ -2,7 +2,7 @@ import logo from './logo.svg';
 
 function App() {
 	return (
-		<div>
+		<div className="App">
 			<h1>NIFS WEB APP</h1>
 		</div>
 	);

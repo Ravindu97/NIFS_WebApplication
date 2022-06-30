@@ -2,8 +2,8 @@ import logo from './logo.svg';
 
 function App() {
 	return (
-		<div>
-			<h1>NIFS WEB APP</h1>
+		<div className="App">
+			<h1>NIFE WEB APP</h1>
 		</div>
 	);
 }
